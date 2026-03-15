@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GenomeLearn</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:black;
+color:white;
+line-height:1.6;
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+border-bottom:1px solid white;
+}
+
+header h1{
+font-size:28px;
+letter-spacing:1px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:16px;
+}
+
+nav a:hover{
+opacity:0.7;
+}
+
+/* sections */
+
+section{
+padding:100px 60px;
+max-width:1000px;
+margin:auto;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.85;
+}
+
+.about, .admissions{
+border-top:1px solid white;
+}
+
+h2{
+margin-bottom:20px;
+font-size:32px;
+}
+
+p{
+font-size:16px;
+opacity:0.85;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid white;
+margin-top:80px;
+font-size:14px;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>GenomeLearn</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#admissions">Admissions</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h2>Welcome to GenomeLearn</h2>
+<p>Your gateway to intelligent education.</p>
+</section>
+
+<section class="admissions" id="admissions">
+<h2>Admissions</h2>
+<p>
+Our admission process is simple and transparent. Students can explore various
+programs, review eligibility criteria, and apply through our streamlined system.
+Our team ensures every student receives the support they need to begin their
+academic journey.
+</p>
+</section>
+
+<section class="about" id="about">
+<h2>About Us</h2>
+<p>
+GenomeLearn provides world-class learning experiences with expert faculty,
+modern infrastructure, and an environment focused on academic excellence.
+Our mission is to empower students with knowledge and skills for the future.
+</p>
+</section>
+
+<footer>
+<p>© 2026 GenomeLearn. All Rights Reserved.</p>
+</footer>
+
+<script>
+window.watsonAssistantChatOptions = {
+integrationID: "a12d9ead-8e57-457c-aeea-32f230d04c5e",
+region: "au-syd",
+serviceInstanceID: "f8244f82-50cc-4689-b3c3-89440d840ce6",
+onLoad: async (instance) => { await instance.render(); }
+};
+setTimeout(function(){
+const t=document.createElement('script');
+t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+(window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+"/WatsonAssistantChatEntry.js";
+document.head.appendChild(t);
+});
+</script>
+
+</body>
+</html>
